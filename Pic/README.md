@@ -1,5 +1,4 @@
-﻿# 实时远程rPPG的应用
-
+﻿
 一、项目方案简介
 
 心率是人体极其重要的生理指标，心率的准确测量对于疾病的诊断及治疗效果的评价具有重要作用。心率可以通过多种生物医学传感器加以测量，较为常规的是心电电极，亦可采用光电型脉搏波传感器等其它传感器。
@@ -23,7 +22,7 @@
 
 考虑一个光源照射一块含有脉动血液的人体皮肤组织和一个记录这幅图像的远程彩色相机。我们进一步假设光源具有恒定的光谱成分，但强度是变化的（在相机处观察到的强度取决于光源到皮肤组织和相机传感器的距离）。相机测量的皮肤有一种特定的颜色（相机测量的肤色是光源（例如强度和光谱）、固有肤色和相机颜色通道灵敏度的组合），这种颜色会随着时间的推移而变化，这是由于运动引起的强度/镜面反射的变化和脉冲引起的细微的颜色变化。这些时间变化与亮度强度水平成正比。
 
-e![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.001.png)
+e![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.001.png)
 
 基于二色反射模型，记录的图像序列中每个皮肤像素的反射可以定义为 RGB 通道中的时变函数：
 Ckt=It⋅(vs(t)+vd(t)+vn(t)
@@ -64,7 +63,7 @@ Ckt≈I0⋅uc⋅c0+I0⋅uc⋅c0⋅it+I0⋅uc⋅st+I0⋅up⋅p(t)
 
 三、项目的实施过程
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.010.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.010.png)
 
 （1）使用电脑摄像头采集画面。
 
@@ -95,11 +94,11 @@ Ckt≈I0⋅uc⋅c0+I0⋅uc⋅c0⋅it+I0⋅uc⋅st+I0⋅up⋅p(t)
 
 线程调度如下图所示：
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.011.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.011.png)
 
 界面效果如下图所示：
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.012.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.012.png)
 
 左上方下拉框中可选择我们所设计的四种信号提取方法：GREEN，G-R，CHROM和PBV。下方两按钮可控制画面中显示原始信号还是带通滤波后的信号。
 
@@ -127,7 +126,7 @@ ICC =		0.9785716816996106
 
 Kendall’s W =	0.9252516039359782
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.013.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.014.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.013.png)![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.014.png)
 
 此外，app计算出的心率与手环及市场上其它app的数据相比，当心率在115以下时测量较为准确，ICC与Kendall’s W都接近1，Bland-Altman图中散点全部位于±1.96SD的区间内，证明APP的测量结果与金标准具有较好的一致性。
 
@@ -149,7 +148,9 @@ ICC =		0.627971332047175
 
 Kendall’s W =	0.5026809843658409
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.015.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.016.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.015.png)
+
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.016.png)
 
 1. G-R：
 
@@ -157,7 +158,7 @@ ICC =		0.4230223303459752
 
 Kendall’s W =	0.0809113394062735
 
-` `![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.017.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.018.png)
+` `![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.017.png)![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.018.png)
 
 1. CHROM：
 
@@ -165,7 +166,9 @@ ICC =		0.8090896643704515
 
 Kendall’s W =	0.6080194569339378
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.019.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.020.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.019.png)
+
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.020.png)
 
 1. PBV：
 
@@ -173,25 +176,27 @@ ICC =		0.034908022328708495
 
 Kendall’s W =	-0.02424286947827545
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.021.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.022.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.021.png)
+
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.022.png)
 
 根据上述实验结果与一致性分析，我们基于ICC组内相关系数与Kendall W协调系数分析GREEN，G-R，CHROM和PBV四种rPPG信号提取手段所获取心率与金标准的一致性分析，可发现CHROM与GREEN方法提取的信号与金标准具有较高的一致性，G-R方法其次，PBV效果最差。而根据各方案的Bland-Altman图可看出，各方案的散点图都位于±1.96SD之间，说明各信号提取方案测量结果与金标准都具有一定的一致性。其中CHROM效果最佳，GREEN第二，G-R其次，PBV最次。
 
 从模型原理分析，因为GREEN采集到的是原始信号，对于头动极为敏感，微小运动即可导致难以detrend的低频扰动。虽程序上我们设计了圆框辅助用户对准并保证头部稳定，但大部分运动情况下GREEN方案效果极不理想。以下分别为稳定与运动状态下提取信号的差异，可见区别极大。
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.023.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.023.png)
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.023.pngPic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.024.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.024.png)
 
 G-R因为通道相减，滤除了部分共模干扰，抗头动干扰能力更强，但信号相较于GREEN更不明显，含有更多噪声毛刺，效果如下：
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.025.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.025.png)
 
 CHROM和PBV同为Model-based方案，此处PBV效果不理想的原因推断为其论文中所包含的预设条件：基于卤素灯和UI-2220SE-C相机的光学RGB滤光片，与此处我们的采集环境和光照环境并不吻合，而CHROM算法对于环境与镜头具有更高的鲁棒性，同时实验结果表明，PBV对于头动与GREEN方法一样敏感。然而两种方案所具有的相同点在于产生的信号不像GREEN和G-R一样具有肉眼可观测的心率特征，但在带通滤波后效果良好。以下分别为CHROM与PBV的信号波形：
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.026.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.026.png)
 
-![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.027.png)
+![](Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.027.png)
 
 五、项目的结论与讨论
 `	`**手机端：**
