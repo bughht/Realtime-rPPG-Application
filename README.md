@@ -128,7 +128,7 @@ Kendall’s W =	0.5026809843658409
 
 ![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.015.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.016.png)
 
-1. G-R：
+2. G-R：
 
 ICC =		0.4230223303459752
 
@@ -136,7 +136,7 @@ Kendall’s W =	0.0809113394062735
 
 ` `![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.017.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.018.png)
 
-1. CHROM：
+3. CHROM：
 
 ICC =		0.8090896643704515
 
@@ -144,7 +144,7 @@ Kendall’s W =	0.6080194569339378
 
 ![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.019.png)![](Pic/Aspose.Words.4c89e03a-bd74-4fc3-aa11-ee1822c225ec.020.png)
 
-1. PBV：
+4. PBV：
 
 ICC =		0.034908022328708495
 
