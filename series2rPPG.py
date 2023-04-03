@@ -7,7 +7,6 @@ Description:
 '''
 import copy
 from obspy.signal.detrend import polynomial, spline
-from rsa import sign
 from scipy import signal
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA

@@ -21,9 +21,13 @@ class CAM2FACE:
 
         # get frontal camera of computer and get fps
         self.cam = cv.VideoCapture(0)
+        if not self.cam.isOpened():
+            print('ERROR:  Unable to open webcam.  Verify that webcam is connected and try again.  Exiting.')
+            self.cam.release()
+            return
         # self.fps = self.cam.get(cv.CAP_PROP_FPS)
         self.fps = 20
-        self.cam.set(cv.CAP_PROP_FPS, self.fps)
+        # self.cam.set(cv.CAP_PROP_FPS, self.fps)
 
         # Initialize Queue for camera capture
         self.QUEUE_MAX = 256
