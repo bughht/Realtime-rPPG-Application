@@ -1,27 +1,4 @@
-# Realtime-rPPG-Application
-
-## Preqrequisites
-
-```bash
-pip install -r requirements.txt
-```
-
-- opencv-python
-- PyQt5
-- pyqtgraph
-- obspy
-- numpy
-- scipy
-- sklearn
-- matplotlib
-- seaborn
-- dlib
-
-## Usage
-
-```bash
-python main.py
-```
+﻿# 实时远程rPPG的应用
 
 ## 一、项目方案简介
 
