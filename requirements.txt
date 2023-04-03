@@ -1,1 +1,10 @@
-opencv_python==4.5.4
+opencv-python
+PyQt5
+pyqtgraph
+obspy
+numpy
+scipy
+sklearn
+matplotlib
+seaborn
+dlib
