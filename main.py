@@ -226,7 +226,7 @@ class mainwin(QMainWindow, Ui_MainWindow):
                     self.Sig_f.setData(self.bvp_fore_raw, pen=(0, 255, 255))
                 else:
                     self.Sig_f.setData(self.bvp_fore, pen=(0, 255, 255))
-                self.Spec_f.setData(
+                self.Spec_f.setData(np.linspace(0,self.processor.series_class.fps/2*60,int((len(self.spc_fore)+1)/2)),
                     self.spc_fore[:int((len(self.spc_fore)+1)/2)], pen=(0, 255, 255))
             else:
                 self.Sig_f.setData([0], [0])
@@ -245,7 +245,7 @@ class mainwin(QMainWindow, Ui_MainWindow):
                     self.Sig_l.setData(self.bvp_left_raw, pen=(255, 0, 255))
                 else:
                     self.Sig_l.setData(self.bvp_left, pen=(255, 0, 255))
-                self.Spec_l.setData(
+                self.Spec_l.setData(np.linspace(0,self.processor.series_class.fps/2*60,int((len(self.spc_left)+1)/2)),
                     self.spc_left[:int((len(self.spc_left)+1)/2)], pen=(255, 0, 255))
             else:
                 self.Sig_l.setData([0], [0])
@@ -264,7 +264,7 @@ class mainwin(QMainWindow, Ui_MainWindow):
                     self.Sig_r.setData(self.bvp_right_raw, pen=(255, 255, 0))
                 else:
                     self.Sig_r.setData(self.bvp_right, pen=(255, 255, 0))
-                self.Spec_r.setData(
+                self.Spec_r.setData(np.linspace(0,self.processor.series_class.fps/2*60,int((len(self.spc_right)+1)/2)),
                     self.spc_right[:int((len(self.spc_right)+1)/2)], pen=(255, 255, 0))
             else:
                 self.Sig_r.setData([0], [0])
